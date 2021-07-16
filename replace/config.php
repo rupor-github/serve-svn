@@ -134,8 +134,8 @@ $config->parentPath('/home/svn');
 // Add custom template paths or comment out templates to modify the list of user selectable templates.
 // The first added template serves as a default.
 
-$config->addTemplatePath($locwebsvnreal.'/templates/calm/');
 $config->addTemplatePath($locwebsvnreal.'/templates/BlueGrey/');
+$config->addTemplatePath($locwebsvnreal.'/templates/calm/');
 $config->addTemplatePath($locwebsvnreal.'/templates/Elegant/');
 
 // You may also specify a default template by uncommenting and changing the following line as necessary.
@@ -342,7 +342,7 @@ $config->allowDownload();
 //
 // Change the line below to set the download level across all your repositories.
 
-$config->setMinDownloadLevel(2);
+$config->setMinDownloadLevel(0);
 
 // To change the level for individual repositories, uncomment and replicate
 // the appropriate line below (replacing 'myrep' with the name of the repository).
