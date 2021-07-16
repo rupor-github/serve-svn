@@ -1,0 +1,5 @@
+#!/usr/bin/with-contenv sh
+
+if [ -n "$SRV_HOST_PORT" ]; then
+  sed -i "s/#ServerName www.example.com:80/ServerName ${SRV_HOST_PORT}/" /etc/apache2/httpd.conf
+fi
