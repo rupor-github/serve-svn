@@ -113,8 +113,9 @@
 // Note that in this case the path is a filesystem path and depends on your platform:
 //   Unix-like: /path/to/parent
 //   Windows: c:\\svn
-//
+
 $config->parentPath('/home/svn');
+
 // $config->parentPath('filesystem path', 'group');
 //
 // To exclude a repository from being added by the parentPath method uncomment the next line
@@ -204,7 +205,7 @@ $config->addTemplatePath($locwebsvnreal.'/templates/Elegant/');
 // By default, WebSVN does not ignore whitespaces when showing diffs.
 // To enable ignoring whitespaces in diffs per default uncomment this line.
 
-// $config->setIgnoreWhitespacesInDiff(true);
+$config->setIgnoreWhitespacesInDiff(true);
 
 // }}}
 
@@ -317,7 +318,7 @@ $config->addInlineMimeType('text/plain');
 // Uncomment the line below to offer a tarball download option across all your
 // repositories.
 //
-// $config->allowDownload();
+$config->allowDownload();
 //
 // Set download modes
 // $config->setDefaultFileDlMode('plain');
@@ -511,7 +512,7 @@ set_time_limit(0);
 
 // Number of spaces to expand tabs to in diff/listing view across all repositories
 
-$config->expandTabsBy(8);
+$config->expandTabsBy(4);
 
 // To override the global setting for individual repositories, uncomment and replicate
 // the line below (replacing 'myrep' with the name of the repository).
