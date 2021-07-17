@@ -1,7 +1,7 @@
 # serve-svn
 ## Very simple container to run WebSVN viewer and provide access to svn utilities and protocol.
 
-[Docker image](https://registry.hub.docker.com/r/rupor/serve-svn/)
+[Docker Hub](https://registry.hub.docker.com/r/rupor/serve-svn/)
 
 I am using this container on my Synology NAS to have access to old code - recently DSM 7.0 dropped svn support and I am to lazy to move old code to git.
 
